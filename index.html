@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class=" ">
+    <!-- navbar session -->
+    <section class="">
+        <div class="navbar flex   bg-base-100">
+            <div class="flex-1">
+              <a class="btn btn-ghost text-xl md:text-8xl">Lets travel</a>
+            </div>
+            <div class="flex ">
+              <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                  <div class="indicator">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                    <span id="count-satrt" class="badge badge-sm indicator-item text-4xl">0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                  <div class="w-10 rounded-full">
+                    <img class="" alt="Tailwind CSS Navbar component" src="picture/WhatsApp Image 2024-02-13 at 00.31.54_250ab8f3.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="mt-20">
+      <div class="hero  bg-base-200">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+          <div>
+            <h1 class="text-5xl font-bold">Box Office News!</h1>
+            <p class="py-6 w-60">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <p>Total Budget : 900 $</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row mt-4">
+      <!-- picture session -->
+      <div class="space-y-10">
+        <div class="card card-side bg-base-100 shadow-xl">
+          <figure><img class="h-[200px] w-[200px]" src="picture/wallpaperflare.com_wallpaper (3).jpg" alt="Movie"/></figure>
+          <div class="card-body">
+            <h2 class="card-title">Shajek</h2>
+            <p>cost: <span>300</span> $</p>
+            <div class="card-actions justify-end">
+              <button  class="btn btn-primary">add to cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- .......... -->
+        <div class="card card-side bg-base-100 shadow-xl">
+          <figure><img class="h-[200px] w-[200px]" src="picture/wallpaperflare.com_wallpaper (5).jpg" alt="Movie"/></figure>
+          <div class="card-body">
+            <h2 class="card-title">Brahmanbaria</h2>
+            <p>cost: <span>400</span> $</p>
+            <div class="card-actions justify-end">
+              <button   class="btn btn-primary">add to cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- ........... -->
+        <div class="card card-side bg-base-100 shadow-xl">
+          <figure><img class="h-[200px] w-[200px]" src="picture/wallpaperflare.com_wallpaper (4).jpg" alt="Movie"/></figure>
+          <div class="card-body">
+            <h2 class="card-title">Bijoynagar</h2>
+            <p>cost: <span>500</span> $</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card session -->
+      <div class="">
+        <div class="card w-96 bg-orange-400 text-black">
+          <div class="card-body">
+            <h2 class="card-title justify-center">Card title!</h2>
+            <hr>
+            <ul id="selected-place-container" >
+              
+            </ul>
+            <p class="flex justify-center">total cost : <span id="total-cost"> 0</span> $</p>
+            <div>
+
+            </div>
+            
+            <div class=" flex flex-col-3 space-x-4">
+              <button class="btn" onclick="granddTotal('bus')">Bus + 100</button>
+              <button class="btn" onclick="granddTotal('Train')">Train - 200</button>
+              <button class="btn" onclick="granddTotal('Flight')">Flight + 500</button>
+            </div>
+            <hr>
+            <div>
+              <p class="flex justify-center">Grand Total : <span id="grandd-total">0</span> $</p>
+            </div>
+            <div>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script/script.js"></script>
+</body>
+</html>
